@@ -32,10 +32,10 @@ def task1():
     v = 1.984
     Z = (X - mu)/(sigma/np.sqrt(n))
     print(Z) # Z = 2.5
-    if Z > v: print("H0 is correct, D = 17mm")
+    if Z < v: print("H0 is correct, D = 17mm")
     else: print("H0 uncorrect, D != 17mm")
 
-# task1()
+task1()
 
 # ЗАДАЧА №3
 # 3.Проведите тест гипотезы. Продавец утверждает, что средний вес
@@ -89,5 +89,5 @@ def task2():
         print(f"{t} > {T_t2}, t не попадает в область принятия H0, H0 не верна")
         print(H_a)
 
-task2()
+# task2()
 
